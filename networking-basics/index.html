@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Dosis" rel="stylesheet">
+</head>
+<body>
+
+	<form id="survey-form" action="/scripts/parseForm.py" method='post'>
+
+  <div id="heading">
+    <h1 id="title" style="font-size:4vw;">-SURVEY  FORM-</h1>
+    <div id="box-sub"><p class="title-animation" id="description" style="font-size:2.5vw;">*  Share your feedback  *</p></div>
+  </div> 
+
+  <div id="container">
+    <div class="labels">
+    <form id="survey-form" action="">
+      <div class="labels">
+       <label id="name-label" for="Name">*Name</label>
+      </div>
+        <input id="name" type="text" name="name" class="user-input"  placeholder="first name" required><br>
+      <div class="labels">
+        <label id="email-label" for="email">*Email</label>
+      </div>
+        <input id="email" type="email" name="email" class="user-input" placeholder="email address" required><br>
+      <div class="labels">
+        <label id="number-label" for="age">*Age</label>
+      </div>
+        <input id="number" type="number" name="age"  min="18" max="100"  placeholder="old?" required><br>
+   </div>  
+
+      <div class="labels">
+        <label for="occupation">*What is your current role at CODE?"</label><br><br>
+         <select id="dropdown" name="occupation" class="dropdown">
+           <option dissabled value>Pick one option</option>
+           <option value="id">ID student</option>
+           <option value="se">SE student</option>
+           <option value="pm">PM student</option>
+           <option value="staff">Staff member</option>
+           <option value="partner">Partner</option>
+           <option value="other">Other</option>
+        </select>
+      </div><br>
+
+     <div id="options">
+       <div class="labels">
+         <label for="feedback">*Would you play again the game?</label>
+     </div>
+       <ul style="list-style: none;">
+         <li class="radio"><label>Definitely, I loved it!<input name="radio-buttons" value="1" type="radio" class="experience"></label></li>
+         <li class="radio"><label>Sure, I mean was ok<input name="radio-buttons" value="2" type="radio" class="experience"></label></li>
+         <li class="radio"><label>Not really, sorry<input name="radio-buttons" value="3" type="radio" class="experience"></label></li>
+       </ul>
+     </div>
+
+     <div id="options">
+       <div class="labels">
+         <label for="levels-played">*Which was your favorite level to play?</label><br>
+       </div>
+         <select id="favorite" name="favorite-level" class="dropdown">
+           <option disabled selected value>Pick one option</option>
+           <option value="Ball-pit">Ball-Pit</option>
+           <option value="code-level">CODE Uni level</option>
+           <option value="google">Google</option>
+           <option value="vr-basement">VR Basementt</option>
+         </select>
+       </div> 
+
+         <div id="options">
+           <div class="labels">
+             <label for="updates">*What would you like to see implemented on the game?</label>
+           </div>
+        <ul id="implementations" style="list-style: none;">
+          <li class="checkbox"><label><input name="implementation1" value="1" type="checkbox" class="impl-by-user">More levels</label></li>
+          <li class="checkbox"><label><input name="implementation2" value="2" type="checkbox" class="impl-by-user">Online gaming</label></li>
+          <li class="checkbox"><label><input name="implementation3" value="3" type="checkbox" class="impl-by-user">Customizable characters</label></li>
+          <li class="checkbox"><label><input name="implementation4" value="4" type="checkbox" class="impl-by-user">More weapons</label></li>
+          <li class="checkbox"><label><input name="implementation5" value="5" type="checkbox" class="impl-by-user">Better animations</label></li>
+          <li class="checkbox"><label><input name="implementation6" value="6" type="checkbox" class="impl-by-user">Game instructions</label></li>
+          <li class="checkbox"><label><input name="implementation7" value="7" type="checkbox" class="impl-by-user">Online rankings</label></li>
+        </ul>
+       </div>  
+
+          <div id="options">
+           <div class="labels">
+             <label class="sharecomments" for="comments">*Any comments?*</label> 
+          </div><br>
+            <textarea id="comments" class="input-field" style="height:80px;resize:horizontal,vertical;border:2px;border-radius:15px;font-size:20px;" name="comment" placeholder="         *stretch box"></textarea><br><br>
+         </div>
+         <button id="submit" type="submit" class="button" style="vertical-align:middle"><span>Submit</span></button>       
+   </div>
+ </form>  
+
+</body>
+</html>
