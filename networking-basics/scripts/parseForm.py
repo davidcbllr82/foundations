@@ -26,9 +26,13 @@ V_comments = form.getvalue('comments')
 print("""
 <html>
   <body>
-   <p>Thanks, %s</p>
+   <h1>Thanks, {v_name}.format</h1><br><br>
+   <p>Your email {v_email}.format has been received.</p><br>
+   <p>Thank you for sharing your age ({v_age}.format) , you preserve well for being so old!</p>
+   
+
   </body>
 </html>
-""" % v_name)
+""")
 
 
