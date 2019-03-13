@@ -9,7 +9,6 @@ data with CSV(comma sepparated values)
 Credit to:Richard White
 
 """
-
 def main():
 	print("Contacts Manager")
 

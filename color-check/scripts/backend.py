@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 
-import cgi, cgitb
+import cgi
 
 form = cgi.FieldStorage()
 
@@ -28,8 +28,6 @@ for i in color_list:
 			v_color = j
 		else:
 			pass
-
-
 
 
 # send an html response.
