@@ -24,10 +24,10 @@ def main():
 			friends.append(line.rstrip("\n").split(",")) #it takes the "comma" out and makes the list again
 			line = infile.readline()
 		infile.close()
-	except: FileNotFoundError:
-		print("Contacts.txt file not found")
-		print("Starting new address book.")
-		friends = []
+	except FileNotFoundError:
+			print("Contacts.txt file not found")
+			print("Starting new address book.")
+			friends = []
 
 	choice = 0
 
