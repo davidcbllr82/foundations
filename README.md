@@ -7,3 +7,5 @@ Challenges for Foundations Semester Software Engineer
 Original Survey Form from my CodePen: https://codepen.io/davidUIX/pen/NeEyjL
 
 -CCC = Color Check Challenge (Under construction)
+
+-New folder added with followed python examples.
