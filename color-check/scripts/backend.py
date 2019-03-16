@@ -33,10 +33,10 @@ for i in color_list:
 # send an html response.
 print("""
 <html>
-<body>
-<p>
-Thanks, %s, %s is a color.
-</p>
-</body>
+	<body>
+		<p>
+			Thanks, %s, %s is a color.
+		</p>
+	</body>
 </html>
 """ % (v_name, v_color))
